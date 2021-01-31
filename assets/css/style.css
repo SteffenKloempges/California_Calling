@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap');
+
+/* font-family: 'Work Sans', sans-serif; */
+
+/* ================================
+            Global_STYLE
+================================= */
+
+body{
+    margin: 0;
+    background: #000;
+    color: #fff;
+}
+
+.button{
+    width: 10%;
+    text-align: center;
+    border: 1px #fff solid;
+    padding: 5px 15px;
+}
+
+.button:hover{
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+/* ================================
+            HEADER_STYLE
+================================= */
+
+.hero{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.hero span{
+    display: block;
+    margin: 0 auto;
+    width: 3px;
+    height: 20vh;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.hero h1{
+    font-size: 5.5em;
+    margin: 0;
+    line-height: 80%;
+}
+
+.hero h1:nth-of-type(2){
+    color: #000;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+}
+
+.hero div{
+    margin-top: 20vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ================================
+            FACTS_STYLE
+================================= */
+
+.facts{
+    padding: 15vh 0px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.huge-text{
+    width: 70%;
+    font-size: 128px;
+}
+
+.listfacts{
+    background: url(../img/map.svg) right / contain no-repeat;
+    padding: 20vh 0px 10vh 0px;
+}
+
+.subfacts p{
+    font-size: 20px;
+    margin: 0;
+    font-size: 16px;
+}
+
+.subfacts h1{
+    margin: 0;
+    font-size: 128px;
+}
+
+/* ================================
+            Stuck_Middle_STYLE
+================================= */
+
+.stuck-section{
+    background: #fff;
+    color: #000;
+    padding-top: 10vh;
+    position: relative;
+}
+
+.text-box{
+    width: 28%;
+    margin: 0 auto;
+}
+
+.text-box:nth-of-type(1){
+    padding: 25vh 0px 0px 0px;
+}
+
+.text-box:nth-of-type(2){
+    padding: 70vh 0px 30vh 0px;
+}
+
+.text-box h3{
+    font-size: 60px;
+    margin: 0;
+}
+
+.text-box p{
+    margin: 0;
+    width: 90%;
+    line-height: 20px;
+}
+
+/* ================================
+    Start-Stuck_Middle_STYLE
+================================= */
+
+.action-img{
+    position: absolute;
+    width: 18%; 
+}
+
+.action-img-last{
+    position: absolute;
+    width: 20%;
+    bottom: -8vh;
+    right: 32%;
+}
+
+.action-img:nth-of-type(1){
+    top: -70px;
+    right: 15%;
+}
+
+.action-img:nth-of-type(2){
+    top: 20vh;
+    left: 5%;
+}
+
+.action-img:nth-of-type(3){
+    top: 50vh;
+    right: 0px;
+}
+
+.action-img:nth-of-type(4){
+    top: 70vh;
+    left: 20%;
+}
+
+.action-img:nth-of-type(5){
+    top: 88vh;
+    right: 20%;
+}
+
+.action-img:nth-of-type(6){
+    bottom: 15vh;
+    left: 0px;
+}
+
+/* ================================
+        END-Stuck_Middle_STYLE
+================================= */
+
+/* ================================
+    Start-Golden-Bear_STYLE
+================================= */
+.bear-section{
+    position: relative;
+}
+
+.bear-info{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bear-info div{
+    padding: 20vh 0px 80vh 0px;
+    width: 25%;
+}
+
+.bear-info h3{
+    font-size: 4em;
+    margin: 0;
+}
+
+.bear-info p{
+    font-size: 2em;   
+}
+
+.bear-section img:nth-of-type(1){
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 15%;
+    z-index: 1;
+}
+
+.bear-section img:nth-of-type(2){
+    position: absolute;
+    width: 25%;
+    top: 65%;
+    left: 55%;
+    z-index: 2;
+}
+
+/* ================================
+    End-Golden-Bear_STYLE
+================================= */
+
+/* ================================
+    Start-Poppy-Bear_STYLE
+================================= */
+
+.bear-section2{
+    position: relative;
+    background: #fff;
+    color: #000;
+    overflow: hidden;
+    padding: 30vh 0px 70vh 0px;
+}
+
+.bear-section2 img:nth-of-type(1){
+    position: absolute;
+    width: 20%;
+    animation-name: circle;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    top: -10%;
+    right: -5%;
+}
+
+@keyframes circle{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+.bear-section2 img:nth-of-type(2){
+    position: absolute;
+    width: 25%;
+    top: 50%;
+    left: 15%;
+    z-index: 2;
+}
+
+.bear-section2 img:nth-of-type(3){
+    position: absolute;
+    width: 50%;
+    top: 42.5%;
+    right: 15%;
+    z-index: 1;
+}
+/* ================================
+        End-Poppy-Bear_STYLE
+================================= */
+
+/* ================================
+            Footer_STYLE
+================================= */
+
+footer{
+    position: relative;
+}
+
+footer div:nth-of-type(1){
+    width: 25%;
+    padding: 5vh 5%;
+}
+
+footer div:nth-of-type(1) h3{
+    font-size: 2.3em;
+}
+
+.icons{
+    width: 5%;
+}
+
+.icons2{
+    width:30%;
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-between;
+}

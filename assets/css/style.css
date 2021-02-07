@@ -10,6 +10,7 @@ body{
     margin: 0;
     background: #000;
     color: #fff;
+    overflow-x: hidden;
 }
 
 .button{
@@ -280,19 +281,30 @@ body{
 
 footer{
     position: relative;
+    overflow: hidden;
 }
 
-footer div:nth-of-type(1){
+.lauf-banner{
+    position: absolute;
+    font-size: 6em;
+    background: #fff;
+    color: #000;
+    transform: rotateZ(45deg);
+    top: 50px;
+    right: -250px;
+}
+
+.footer-info{
     width: 25%;
     padding: 5vh 5%;
 }
 
-footer div:nth-of-type(1) h3{
+.footer-info h3{
     font-size: 2.3em;
 }
 
 .icons{
-    width: 5%;
+    width: 10%;
 }
 
 .icons2{
@@ -302,4 +314,148 @@ footer div:nth-of-type(1) h3{
 .social-media{
     display: flex;
     justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* ================================
+            Switch_STYLE
+================================= */
+
+.switch_section{
+    position: fixed;
+    display: flex;
+}
+
+i{
+    font-size: 24px;
+    padding: 5px;
+    color: red;
+}
+
+/* ================================
+         Media Querys
+================================= */
+
+@media (max-width: 992px){
+    .huge-text{
+        font-size: 60px;
+    }
+    .listfacts{
+        padding: 5vh 0px;
+    }
+    .text-box:nth-of-type(1){
+        padding: 10vh 0px 0px 0px;
+    }
+    
+    .text-box:nth-of-type(2){
+        padding: 30vh 0px 30vh 0px;
+    }
+    .action-img:nth-of-type(1){
+        top: -40px;
+        right: 15%;
+    }
+    
+    .action-img:nth-of-type(2){
+        top: 15vh;
+        left: 5%;
+    }
+    
+    .action-img:nth-of-type(3){
+        top: 40vh;
+        right: 0px;
+    }
+    
+    .action-img:nth-of-type(4){
+        top: 55vh;
+        left: 20%;
+    }
+    
+    .action-img:nth-of-type(5){
+        top: 84vh;
+        right: 18%;
+    }
+    
+    .action-img:nth-of-type(6){
+        bottom: 15vh;
+        left: 0px;
+    }
+    .action-img-last{
+        position: absolute;
+        width: 25%;
+        bottom: -8vh;
+        right: 30%;
+    }
+    .bear-info div{
+        padding: 20vh 0px 50vh 0px;
+    }
+    .bear-info p{
+        font-size: 1.5em;   
+    }
+    .bear-section img:nth-of-type(1){
+        position: absolute;
+        width: 50%;
+        top: 60%;
+        left: 15%;
+        z-index: 1;
+    }
+    
+    .bear-section img:nth-of-type(2){
+        position: absolute;
+        width: 25%;
+        top: 70%;
+        left: 55%;
+        z-index: 2;
+    }
+    .bear-section2{
+        position: relative;
+        background: #fff;
+        color: #000;
+        overflow: hidden;
+        padding: 10vh 0px 30vh 0px;
+    }
+    
+    .bear-section2 img:nth-of-type(1){
+        position: absolute;
+        width: 30%;
+        animation-name: circle;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        top: -6%;
+        right: -8%;
+    }
+    .bear-section2 img:nth-of-type(2){
+        position: absolute;
+        width: 25%;
+        top: 60%;
+        left: 15%;
+        z-index: 2;
+    }
+    
+    .bear-section2 img:nth-of-type(3){
+        position: absolute;
+        width: 50%;
+        top: 52.5%;
+        right: 15%;
+        z-index: 1;
+    }
+    .lauf-banner{
+        position: absolute;
+        font-size: 4em;
+        background: #fff;
+        color: #000;
+        transform: rotateZ(45deg);
+        top: 50px;
+        right: -250px;
+    }
+    
+    .footer-info{
+        width: 25%;
+        padding: 5vh 5%;
+    }
+    
+    .footer-info h3{
+        font-size: 1.5em;
+    }
 }
